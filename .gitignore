@@ -361,3 +361,35 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore project appsettings with secrets
+/JWT_Auth/appsettings.json
+/JWT_Auth/appsettings.*.json
+
+# Local secrets
+secrets.json
+.env
+
+# Dotnet build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+packages/
+
+# Others
+.DS_Store
