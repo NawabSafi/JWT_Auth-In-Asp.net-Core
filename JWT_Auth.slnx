@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="JWT_Auth/JWT_Auth.csproj" />
+  <Project Path="Jwt_Test/Jwt_Test.csproj" Id="5e5b72ad-8f55-43b3-b53e-18937b573b10" />
 </Solution>
