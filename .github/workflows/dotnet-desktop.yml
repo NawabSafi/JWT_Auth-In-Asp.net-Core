@@ -21,11 +21,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
-      - name: Restore packages
+      - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build project
+      - name: Build solution
         run: dotnet build --configuration Release --no-restore
+
+      - name: Run tests
+        run: dotnet test --configuration Release --no-build --verbosity normal
 
       - name: Publish
         run: dotnet publish --configuration Release --no-build --output publish
